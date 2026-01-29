@@ -1,0 +1,115 @@
+@import url('Ph0enyx.css');
+
+body {
+    overflow-y: auto !important;
+    padding: 50px 0;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 4rem;
+}
+
+.contact-card {
+    background: rgba(26, 26, 46, 0.6);
+    border: 1px solid #4a4a6a;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent-color);
+    background: rgba(40, 40, 60, 0.8);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.8rem;
+    fill: var(--accent-color);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.contact-title {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-value {
+    font-size: 1rem;
+    color: #aaa;
+    word-break: break-all;
+}
+
+.discord_id {
+    font-family: monospace;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    user-select: all;
+}
+
+.back-button-container {
+    margin-top: 2rem;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,195 @@
+:root {
+    --bg-overlay: rgba(26, 26, 46, 0.9);
+    --card-border: #4a4a6a;
+    --text-color: #e0e0e0;
+    --accent-color: #f0f0f0;
+    --font-main: 'Poppins', sans-serif;
+}
+
+.background-container {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url('assets/bg-ph0enyx.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    overflow-y: auto !important;
+    padding-top: 120px !important;
+    padding-bottom: 50px;
+    font-family: var(--font-main);
+    display: block !important;
+}
+
+.content-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    margin-bottom: 3rem;
+
+    background: linear-gradient(90deg, transparent, rgba(74, 74, 106, 0.8), transparent);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.certs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+.cert-card {
+    background: rgba(30, 30, 45, 0.8);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+    flex: 1 1 350px;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    border-color: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.cert-image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 8px solid #2a2a40;
+    outline: 2px solid #5a5a75;
+    box-shadow:
+        inset 0 0 20px rgba(0, 0, 0, 0.8),
+        0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: -1px;
+}
+
+.cert-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-image-container img {
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 1.5rem;
+    background: linear-gradient(180deg, rgba(40, 40, 60, 0.9) 0%, rgba(20, 20, 30, 0.95) 100%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cert-title {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.cert-platform {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tag.thm {
+    background: #0f9d58;
+    color: #fff;
+}
+
+.tag.hack4u {
+    background: #a81c1c;
+    color: #fff;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #4a4a6a;
+    background-color: var(--bg-overlay);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #333;
+    border-color: #fff;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a6a;
+    border-radius: 5px;
+}

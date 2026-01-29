@@ -1,0 +1,411 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-placeholder: #1a1a2e;
+    --btn-bg-placeholder: #2c2c44;
+    --text-color: #e0e0e0;
+    --accent-color: #f0f0f0;
+    --font-main: 'Poppins', sans-serif;
+}
+
+.logo-link {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+    width: 110px;
+    height: auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.logo-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.logo-link:hover {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)) brightness(1.2);
+    transform: scale(1.05);
+}
+
+.main-menu-card {
+    background-color: rgba(26, 26, 46, 0.6);
+    border: 2px solid #4a4a6a;
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    width: auto;
+    max-width: 90%;
+    position: relative;
+}
+
+.main-menu-title {
+    font-family: var(--font-main);
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-image-container {
+    margin-bottom: 1.5rem;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.main-menu-card .logo-link:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-placeholder);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('assets/bg-ph0enyx.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.menu-container {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.menu-item {
+    position: relative;
+    width: 400px;
+    padding: 0 20px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+
+    background-color: var(--btn-bg-placeholder);
+    border: 2px solid #4a4a6a;
+    border-radius: 50px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button:hover {
+    transform: scale(1.05);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button .text {
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.menu-button svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover svg {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+.decoration-left,
+.decoration-right {
+    position: absolute;
+}
+
+.main-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 90%;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.main-menu-card {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.terminal-card {
+    position: fixed;
+    bottom: 109px;
+    right: 30px;
+    width: 480px;
+    background-color: rgba(26, 26, 46, 0.95);
+    border: 1px solid #4a4a6a;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    font-family: 'Consolas', 'Courier New', monospace;
+    overflow: hidden;
+    color: #e0e0e0;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    font-size: 0.85rem;
+}
+
+
+.terminal-header {
+    background-color: rgba(40, 40, 60, 0.95);
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #4a4a6a;
+}
+
+.terminal-title {
+    font-weight: bold;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.control {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.control.close:hover {
+    color: red;
+}
+
+.terminal-body {
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    overflow-y: hidden;
+    flex-grow: 1;
+}
+
+.line {
+    margin-bottom: 2px;
+}
+
+.output {
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.output.processing {
+    color: #ffff00;
+}
+
+.output.high-value {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+.blinking-cursor::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.tools-monitor {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 100;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-main);
+    perspective: 1000px;
+}
+
+.monitor-frame {
+    background: #1a1a2e;
+    border: 4px solid #4a4a6a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.monitor-screen {
+    background: rgba(10, 10, 20, 0.95);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 25px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+}
+
+.monitor-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #0f9d58;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 5px #0f9d58;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    background: rgba(40, 40, 60, 0.6);
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tool-item:hover {
+    background: rgba(60, 60, 90, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.tool-icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.system-status {
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #555;
+    font-family: monospace;
+}
+
+.monitor-stand {
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(90deg, #2c2c44, #4a4a6a, #2c2c44);
+    margin-top: -4px;
+    z-index: -1;
+    position: relative;
+}
+
+.monitor-base {
+    width: 190px;
+    height: 15px;
+    background: #2c2c44;
+    border-top: 2px solid #555;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
