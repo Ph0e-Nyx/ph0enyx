@@ -36,6 +36,49 @@
     transform: scale(1.05);
 }
 
+.hollowsec-link {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 1000;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    background-color: rgba(26, 26, 46, 0.6);
+    border: 2px solid #4a4a6a;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hollowsec-link svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.hollowsec-link:hover {
+    background-color: rgba(44, 44, 68, 0.9);
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(2px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.hollowsec-link:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
 .main-menu-card {
     background-color: rgba(26, 26, 46, 0.6);
     border: 2px solid #4a4a6a;
