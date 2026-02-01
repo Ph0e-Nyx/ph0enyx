@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -453,9 +453,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* --- RESPONSIVE DESIGN --- */
 
-/* Tablets & Small Laptops (max-width: 1200px) */
 @media screen and (max-width: 1200px) {
     .main-layout {
         width: 95%;
@@ -463,29 +461,23 @@ body {
     }
 }
 
-/* Tablets & Mobile Devices (max-width: 992px) */
 @media screen and (max-width: 992px) {
     body {
         overflow-y: auto;
-        /* Enable scrolling */
         height: auto;
         min-height: 100vh;
         padding-bottom: 50px;
-        /* Space for scrolling */
         display: block;
-        /* Remove flex centering constraint */
     }
 
     .main-layout {
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
-        /* Space for fixed header/links */
         margin: 0 auto;
         gap: 3rem;
     }
 
-    /* Adjust Main Menu */
     .main-menu-card {
         width: 90%;
         max-width: 500px;
@@ -497,7 +489,6 @@ body {
         max-width: 400px;
     }
 
-    /* Terminal Adjustment */
     .terminal-card {
         position: relative;
         bottom: auto;
@@ -507,12 +498,10 @@ body {
         height: 300px;
         margin: 0 auto;
         order: 2;
-        /* Ensure order in column layout */
         z-index: 10;
         margin-bottom: 2rem;
     }
 
-    /* Tools Monitor Adjustment */
     .tools-monitor {
         position: relative;
         bottom: auto;
@@ -534,7 +523,6 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     }
 
-    /* Adjust Logo & Header Links */
     .logo-link {
         width: 80px;
         top: 15px;
@@ -549,11 +537,9 @@ body {
     }
 }
 
-/* Small Mobile Devices (max-width: 600px) */
 @media screen and (max-width: 600px) {
     .hollowsec-link span {
         display: none;
-        /* Hide text on very small screens, keep icon */
     }
 
     .hollowsec-link {
