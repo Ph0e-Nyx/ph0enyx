@@ -20,7 +20,7 @@ Diseñado con una estética envolvente inspirada en entornos de terminal y siste
 ## 🔗 URL del Portfolio
 
 Accede a la versión desplegada aquí:  
-👉 **[https://ph0e-nyx.github.io/ph0enyx/](https://ph0e-nyx.github.io/ph0enyx/)**
+👉 **[https://ph0e-nyx.github.io/ph0enyx/](https://ph0e-nyx.github.io/ph0enyx/--)**
 
 ---
 
