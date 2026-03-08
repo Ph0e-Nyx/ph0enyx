@@ -6,7 +6,7 @@
   <h1>Ph0eNyx Portfolio</h1>
   <p><strong>Defense | Forensics | Response</strong></p>
   
-  [![Live Demo](https://img.shields.io/badge/LIVE-DEMO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)](https://ph0e-nyx.github.io/Ph0enyx/Ph0enyx.html)
+  [![Live Demo](https://img.shields.io/badge/LIVE-DEMO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)](https://ph0enyx.surge.sh)
   
 </div>
 
@@ -20,7 +20,7 @@ Diseñado con una estética envolvente inspirada en entornos de terminal y siste
 ## 🔗 URL del Portfolio
 
 Accede a la versión desplegada aquí:  
-👉 **[https://ph0e-nyx.github.io/ph0enyx/](https://ph0e-nyx.github.io/ph0enyx/--)**
+👉 **[https://ph0enyx.surge.sh/](https://ph0enyx.surge.sh)**
 
 ---
 
