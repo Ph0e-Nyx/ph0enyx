@@ -19,17 +19,10 @@
         <img src="assets/logo Nyx.png" alt="Ph0eNyx Logo">
     </a>
 
-    <a href="https://hollowsec.surge.sh/" target="_blank" class="hollowsec-link">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-        </svg>
-        <span>HollowSec</span>
-    </a>
-
     <div class="main-layout">
 
         <main class="main-menu-card">
-
+            <!-- ... current structure ... -->
             <div class="profile-image-container">
                 <img src="assets/descarga.jpg" alt="Profile" class="menu-profile-pic">
             </div>
@@ -37,6 +30,7 @@
             <h2 class="main-menu-title">Portal</h2>
 
             <ul class="menu-list">
+                <!-- menu items -->
                 <li class="menu-item">
                     <a href="sobre-mi.html" class="menu-button">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +39,7 @@
                         </svg>
                         <span class="text">Sobre mí</span>
                     </a>
-                    <div class="decoration-left"></div>
-                    <div class="decoration-right"></div>
                 </li>
-
                 <li class="menu-item">
                     <a href="proyectos.html" class="menu-button">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -58,18 +49,15 @@
                         <span class="text">Proyectos</span>
                     </a>
                 </li>
-
                 <li class="menu-item">
                     <a href="certificaciones.html" class="menu-button">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12 6.5c-2.5 0-4.5 1.5-6 3.5V20c1.5-2 3.5-3.5 6-3.5s4.5 1.5 6 3.5V10c-1.5-2-3.5-3.5-6-3.5zm7 11.5c-1.5-2-3.5-3.5-6-3.5s-4.5 1.5-6 3.5V10c0-2.5 3-4.5 6-4.5s6 2 6 4.5v8z" />
-                            <path d="M0 0h24v24H0z" fill="none" />
                         </svg>
                         <span class="text">Certificaciones</span>
                     </a>
                 </li>
-
                 <li class="menu-item">
                     <a href="github-profile.html" class="menu-button">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -92,139 +80,39 @@
             </ul>
         </main>
 
-
-        <div class="terminal-card">
-            <div class="terminal-header">
-                <span class="terminal-title">Administrador: Windows PowerShell</span>
-                <div class="terminal-controls">
-                    <span class="control minimize">_</span>
-                    <span class="control maximize">☐</span>
-                    <span class="control close">X</span>
+        <div class="sidebar-cards">
+            <a href="https://hollowsec.surge.sh/" target="_blank" class="sidebar-card hollowsec-card">
+                <div class="card-header">
+                    <img src="assets/logo-sinfondo.png" alt="HollowSec Logo" class="card-icon">
+                    <span class="card-title">HollowSec</span>
                 </div>
-            </div>
-            <div class="terminal-body" id="ps-terminal">
-
-                <div class="line">Wait-Event -SourceIdentifier "Ph0enyx_Secure_Shell"</div>
-                <div class="line output">Initializing secure connection... [OK]</div>
-                <div class="line">Get-MpComputerStatus | Select-Object AMProductVersion</div>
-                <div class="line output">AMProductVersion : 4.18.23110.3</div>
-                <div class="line">Analyze-Evidence -Path "C:\Forensics\Case_413.mem"</div>
-                <div class="line output processing">Loading memory dump... 14%</div>
-                <div class="line output processing">Parsing MFT records... 82%</div>
-                <div class="line output high-value">ALERT: Suspicious process detected (PID: 6664) - metsrv.dll</div>
-                <div class="line output">Extracting artifacts... Done.</div>
-                <div class="line blinking-cursor">PS C:\Users\Ph0enyx\DFIR_Case>_</div>
-            </div>
-        </div>
-
-
-        <div class="tools-monitor">
-            <div class="monitor-frame">
-                <div class="monitor-screen">
-                    <div class="monitor-header">
-                        <span class="status-dot"></span>
-                        <span class="monitor-title">SYSTEM_TOOLS // DFIR_KIT</span>
-                    </div>
-                    <div class="tools-grid">
-                        <a href="https://www.autopsy.com/" target="_blank" class="tool-item">
-                            <span class="tool-icon">🔍</span>
-                            <span class="tool-name">Autopsy</span>
-                        </a>
-                        <a href="https://www.wireshark.org/" target="_blank" class="tool-item">
-                            <span class="tool-icon">🦈</span>
-                            <span class="tool-name">Wireshark</span>
-                        </a>
-                        <a href="https://volatilityfoundation.org/" target="_blank" class="tool-item">
-                            <span class="tool-icon">🧠</span>
-                            <span class="tool-name">Volatility</span>
-                        </a>
-                        <a href="https://ericzimmerman.github.io/" target="_blank" class="tool-item">
-                            <span class="tool-icon">🛠️</span>
-                            <span class="tool-name">EZ Tools</span>
-                        </a>
-                        <a href="https://www.exterro.com/ftk-imager" target="_blank" class="tool-item">
-                            <span class="tool-icon">💾</span>
-                            <span class="tool-name">FTK Imager</span>
-                        </a>
-                        <a href="https://gchq.github.io/CyberChef/" target="_blank" class="tool-item">
-                            <span class="tool-icon">🍳</span>
-                            <span class="tool-name">CyberChef</span>
-                        </a>
-                    </div>
-                    <div class="system-status">
-                        <span>STATUS: ONLINE</span>
-                        <span class="ping">PING: 24ms</span>
-                    </div>
+                <p class="card-description">
+                    Página oficial de la comunidad de Discord. Centro integral de ciberseguridad con recursos especializados en Red Team (ofensiva), Blue Team (defensiva) y Purple Team. Accede a nuestra documentación en Gitbook y certificaciones exclusivas.
+                </p>
+                <div class="card-status">
+                    <span class="status-indicator"></span>
+                    SISTEMA OPERATIVO // PROTECCIÓN ACTIVA
                 </div>
-            </div>
-            <div class="monitor-stand"></div>
-            <div class="monitor-base"></div>
+            </a>
+
+            <a href="https://www.wattpad.com/myworks/408711715-cielo-&-infierno" target="_blank" class="sidebar-card niier-card">
+                <div class="card-header">
+                    <svg class="card-icon book-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+                    </svg>
+                    <span class="card-title">NiieR // Escritura</span>
+                </div>
+                <p class="card-description">
+                    Espacio personal de escritura donde comparto mis ideas y relatos. Un libro abierto que se actualiza diariamente con nuevos capítulos. Lejos de la ciberseguridad, es mi refugio creativo en mis tiempos libres.
+                </p>
+                <div class="card-status">
+                    <span class="status-indicator"></span>
+                    NUEVO CAPÍTULO DISPONIBLE
+                </div>
+            </a>
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const lines = [
-                { text: 'Wait-Event -SourceIdentifier "Ph0enyx_Secure_Shell"', type: 'command', delay: 800 },
-                { text: 'Initializing secure connection... [OK]', type: 'output', delay: 400 },
-                { text: 'Get-MpComputerStatus | Select-Object AMProductVersion', type: 'command', delay: 1200 },
-                { text: 'AMProductVersion : 4.18.23110.3', type: 'output', delay: 300 },
-                { text: 'Analyze-Evidence -Path "C:\\Forensics\\Case_413.mem"', type: 'command', delay: 1500 },
-                { text: 'Loading memory dump... 14%', type: 'output processing', delay: 800 },
-                { text: 'Parsing MFT records... 82%', type: 'output processing', delay: 800 },
-                { text: 'ALERT: Suspicious process detected (PID: 6664) - metsrv.dll', type: 'output high-value', delay: 1000 },
-                { text: 'Extracting artifacts... Done.', type: 'output', delay: 600 },
-                { text: 'Invoke-ForensicTimeline -Target "SIEM_Logs"', type: 'command', delay: 1400 },
-                { text: 'Processing 45,201 events...', type: 'output', delay: 900 },
-                { text: 'Match found: EventID 4624 (Logon Type 3) from IP 666.999.0.1', type: 'output high-value', delay: 1200 },
-            ];
-
-            const terminalBody = document.getElementById('ps-terminal');
-            terminalBody.innerHTML = '';
-            let lineIndex = 0;
-
-            function addLine() {
-                if (lineIndex >= lines.length) {
-
-                    setTimeout(() => {
-                        terminalBody.innerHTML = '';
-                        lineIndex = 0;
-                        addLine();
-                    }, 5000);
-                    return;
-                }
-
-                const lineData = lines[lineIndex];
-                const div = document.createElement('div');
-                div.className = 'line ' + (lineData.type || '');
-
-                if (lineData.type === 'command') {
-                    div.innerHTML = `<span class="prompt">PS C:\\Users\\Ph0enyx\\DFIR_Case></span> ${lineData.text}`;
-                } else {
-                    div.textContent = lineData.text;
-                }
-
-                terminalBody.appendChild(div);
-
-
-                const cursor = document.createElement('div');
-                cursor.className = 'line blinking-cursor';
-                cursor.innerHTML = 'PS C:\\Users\\Ph0enyx\\DFIR_Case>_';
-
-
-                const prevCursor = terminalBody.querySelector('.blinking-cursor');
-                if (prevCursor) prevCursor.remove();
-
-                terminalBody.appendChild(cursor);
-                terminalBody.scrollTop = terminalBody.scrollHeight; // Auto-scroll
-
-                lineIndex++;
-                setTimeout(addLine, lineData.delay);
-            }
-
-            setTimeout(addLine, 1000);
-        });
-    </script>
 </body>
 
 </html>
