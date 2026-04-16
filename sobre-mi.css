@@ -1,0 +1,28 @@
+/* 
+    Legacy styles removed to fix layout conflicts. 
+    Global styles from style.css handle the layout.
+*/
+.interests-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.interests-list li {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interests-list li:hover {
+    background: rgba(0, 212, 255, 0.05);
+    transform: translateX(5px);
+    border-color: var(--cyan);
+}
